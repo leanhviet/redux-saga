@@ -1,0 +1,13 @@
+// Jest Snapshot v1, https://goo.gl/fbAQLP
+
+exports[`Footer component should render correctly Footer component default props 1`] = `
+<footer
+  className="footer"
+>
+  <h4
+    className="footer__copyright"
+  >
+    Copyright © 2019 Youtube Inc.
+  </h4>
+</footer>
+`;

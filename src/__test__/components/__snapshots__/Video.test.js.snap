@@ -1,0 +1,55 @@
+// Jest Snapshot v1, https://goo.gl/fbAQLP
+
+exports[`Video component should render correctly Video component default props 1`] = `
+<div
+  className="video"
+>
+  <div
+    className="video__area"
+  >
+    <Link
+      to="/detail/undefined"
+    >
+      <div
+        className="video__area__mask"
+      >
+        <div
+          className="vertical-align"
+        >
+          <i
+            className="fa fa-play-circle"
+          />
+          <p>
+            Play Now
+          </p>
+        </div>
+      </div>
+      <img
+        alt="video"
+        className="img-responsive"
+        onError={[Function]}
+      />
+      <span
+        className="duration"
+      />
+    </Link>
+  </div>
+  <Link
+    to="/detail/undefined"
+  >
+    <h4 />
+  </Link>
+  <p
+    className="video__published-text"
+  >
+    <span />
+     By 
+    <strong />
+  </p>
+  <p
+    className="views"
+  >
+    undefined Views
+  </p>
+</div>
+`;

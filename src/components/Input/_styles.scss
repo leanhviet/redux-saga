@@ -1,0 +1,13 @@
+.input {
+  border: 1px solid $iron-approx;
+  color: $pale-sky-approx;
+  font-size: 16px;
+  padding: 17px 25px;
+  width: 100%;
+  outline: none;
+
+  &.search {
+    background: url('./assets/images/search.png') $white no-repeat right 35px
+      center;
+  }
+}

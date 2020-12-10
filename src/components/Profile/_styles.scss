@@ -1,0 +1,26 @@
+.profile {
+  display: flex;
+
+  &__img {
+    width: 40px;
+    height: 40px;
+    margin-right: 20px;
+  }
+
+  &__info {
+    width: 90%;
+
+    &__username,
+    &__logout {
+      font-weight: bold;
+    }
+
+    &__username {
+      margin: 0;
+    }
+
+    &__logout {
+      color: $red;
+    }
+  }
+}

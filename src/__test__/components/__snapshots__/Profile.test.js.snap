@@ -1,0 +1,28 @@
+// Jest Snapshot v1, https://goo.gl/fbAQLP
+
+exports[`Profile component should render correctly Profile component default props 1`] = `
+<div
+  className="profile"
+>
+  <img
+    alt="profile"
+    className="img-circle profile__img"
+    onError={[Function]}
+    src=""
+  />
+  <div
+    className="text-left profile__info"
+  >
+    <p
+      className="profile__info__username"
+    >
+      Le Anh Viet
+    </p>
+    <p
+      className="profile__info__subs"
+    >
+      9 Subscribers
+    </p>
+  </div>
+</div>
+`;

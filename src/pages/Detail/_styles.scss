@@ -1,0 +1,9 @@
+// Comment area
+.comment-list {
+  padding-top: 30px;
+
+  &__text-comment {
+    border: 0;
+    border-bottom: 1px solid $gray;
+  }
+}

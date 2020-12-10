@@ -1,0 +1,64 @@
+.video {
+  margin-top: 40px;
+
+  &__area {
+    position: relative;
+
+    &:hover &__mask {
+      @include transition(all 0.3s ease-in-out);
+
+      display: block;
+      cursor: pointer;
+      opacity: 100;
+    }
+
+    &__mask {
+      position: absolute;
+      background-color: $persimmon;
+      width: 100%;
+      height: 100%;
+      text-align: center;
+      opacity: 0;
+
+      & .vertical-align {
+        @include transform(translateY(-50%));
+
+        position: relative;
+        top: 50%;
+
+        & i {
+          font-size: 80px;
+          color: $white;
+        }
+      }
+    }
+
+    & .duration {
+      background-color: $red;
+      color: $white;
+      padding: 10px 30px;
+      text-transform: uppercase;
+      font-weight: 700;
+      font-size: 12px;
+      position: absolute;
+      right: 0;
+      bottom: 0;
+    }
+  }
+
+  &__published-text {
+    & > span {
+      color: $red;
+    }
+
+    & > strong {
+      color: $chathams-blue;
+    }
+  }
+
+  & > p {
+    white-space: nowrap;
+    overflow: hidden;
+    text-overflow: ellipsis;
+  }
+}

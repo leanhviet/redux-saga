@@ -1,0 +1,105 @@
+{
+  "name": "practice-redux-two",
+  "version": "0.1.0",
+  "private": true,
+  "dependencies": {
+    "@babel/runtime": "^7.5.1",
+    "@storybook/addon-storyshots": "^5.0.11",
+    "apisauce": "^1.0.3",
+    "axios": "^0.19.0",
+    "axios-mock-adapter": "^1.16.0",
+    "babel-loader": "8.0.5",
+    "bootstrap": "3",
+    "flow-typed": "^2.5.2",
+    "font-awesome": "^4.7.0",
+    "imagemin-lint-staged": "^0.4.0",
+    "moment": "^2.24.0",
+    "node-sass": "^4.12.0",
+    "react": "^16.8.6",
+    "react-bootstrap": "0.32.4",
+    "react-dom": "^16.8.6",
+    "react-google-login": "^5.0.4",
+    "react-redux": "^7.0.3",
+    "react-router": "^5.0.0",
+    "react-router-dom": "^5.0.0",
+    "react-scripts": "3.0.1",
+    "redux": "^4.0.1",
+    "redux-saga": "^1.0.2",
+    "redux-saga-test-plan": "^4.0.0-beta.3",
+    "reduxsauce": "^1.1.0",
+    "seamless-immutable": "^7.1.4"
+  },
+  "scripts": {
+    "start": "react-scripts start",
+    "build": "react-scripts build",
+    "test": "jest --config=jest.config.js",
+    "test:coverage": "yarn test --coverage",
+    "eject": "react-scripts eject",
+    "flow": "flow",
+    "storybook": "start-storybook -p 9009 -s public",
+    "build-storybook": "build-storybook -s public"
+  },
+  "eslintConfig": {
+    "extends": "react-app"
+  },
+  "browserslist": {
+    "production": [
+      ">0.2%",
+      "not dead",
+      "not op_mini all"
+    ],
+    "development": [
+      "last 1 chrome version",
+      "last 1 firefox version",
+      "last 1 safari version"
+    ]
+  },
+  "devDependencies": {
+    "@babel/core": "^7.4.5",
+    "@babel/plugin-transform-runtime": "^7.5.0",
+    "@babel/preset-env": "^7.4.5",
+    "@babel/preset-flow": "^7.0.0",
+    "@babel/preset-react": "^7.0.0",
+    "@redux-saga/testing-utils": "^1.0.5",
+    "@storybook/addon-actions": "^5.0.11",
+    "@storybook/addon-links": "^5.0.11",
+    "@storybook/react": "^5.0.11",
+    "babel-jest": "^24.8.0",
+    "babel-preset-jest": "^24.6.0",
+    "enzyme": "^3.9.0",
+    "enzyme-adapter-react-16": "^1.13.2",
+    "enzyme-to-json": "^3.3.5",
+    "eslint": "^5.16.0",
+    "eslint-config-prettier": "^4.3.0",
+    "eslint-plugin-prettier": "^3.1.0",
+    "eslint-plugin-react": "^7.13.0",
+    "eslint-plugin-react-hooks": "^1.6.0",
+    "flow-bin": "^0.100.0",
+    "husky": "^2.4.1",
+    "lint-staged": "^8.1.7",
+    "prettier": "^1.17.1",
+    "pretty-quick": "^1.11.0",
+    "redux-logger": "^3.0.6",
+    "why-did-you-update": "^1.0.6"
+  },
+  "husky": {
+    "hooks": {
+      "pre-commit": "pretty-quick --staged && lint-staged && yarn flow && yarn test"
+    }
+  },
+  "lint-staged": {
+    "{src/**/*.js": [
+      "prettier --write",
+      "git add"
+    ],
+    "{src,__tests__,stories}/**/*.{js,jsx}": [
+      "prettier --write",
+      "eslint --fix",
+      "git add"
+    ],
+    "*.{png,jpeg,jpg,gif,svg}": [
+      "imagemin-lint-staged",
+      "git add"
+    ]
+  }
+}

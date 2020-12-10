@@ -1,0 +1,37 @@
+// Jest Snapshot v1, https://goo.gl/fbAQLP
+
+exports[`Comment component should render correctly Comment component default props 1`] = `
+<div
+  className="comment"
+>
+  <Profile
+    name="Le Anh Viet"
+    onLogout={[Function]}
+    src=""
+    subName="9 Subscribers"
+  />
+  <div
+    className="text-right comment__menu"
+  >
+    <span
+      className="comment__menu__icon"
+    >
+      <i
+        className="fa fa-thumbs-up"
+      />
+    </span>
+    <span
+      className="comment__menu__icon"
+    >
+      <i
+        className="fa fa-thumbs-down"
+      />
+    </span>
+    <span
+      className="comment__menu__icon"
+    >
+      reply
+    </span>
+  </div>
+</div>
+`;
